@@ -8,14 +8,14 @@ class Solution {
             }
         }
         for(int i=0;i<matrix.length;i++){
-            int left = 0;
-            int right = matrix.length-1;
-            while(left<right){
-                int temp = matrix[i][left];
-                matrix[i][left] = matrix[i][right];
-                matrix[i][right] = temp;
-                left++;
-                right--;
+            int start = 0;
+            int end = matrix.length-1;
+            while(start<end){
+                int temp = matrix[i][start];
+                matrix[i][start] = matrix[i][end];
+                matrix[i][end] = temp;
+                start++;
+                end--;
             }
         }
     }
