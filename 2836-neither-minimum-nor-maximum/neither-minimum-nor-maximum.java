@@ -1,5 +1,6 @@
 class Solution {
     public int findNonMinOrMax(int[] nums) {
+        Arrays.sort(nums);
         int max = nums[0];
         int min = nums[0];
         for(int i=1;i<nums.length;i++){
