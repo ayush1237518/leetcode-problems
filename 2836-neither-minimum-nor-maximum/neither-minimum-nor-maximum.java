@@ -1,8 +1,5 @@
 class Solution {
     public int findNonMinOrMax(int[] nums) {
-       /* if(nums.length < 3){
-            return -1;
-        }*/
         int max = nums[0];
         int min = nums[0];
         for(int i=1;i<nums.length;i++){
